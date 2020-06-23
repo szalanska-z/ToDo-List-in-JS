@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@400;700&family=Kite+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #3d405b;
+  --orange: #e07a5f;
+  --green: #81b29a;
+  --light: #f4f1de;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Encode Sans Condensed", sans-serif;
+  margin-top: 120px;
+  background-color: #eedabb;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: var(--light);
+  text-transform: uppercase;
+  font-family: "Kite One", sans-serif;
+}
+
+.wrapper {
+  width: 800px;
+  background-color: var(--orange);
+  box-shadow: 4px 4px 5px grey;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.header {
+  padding: 40px;
+  border-radius: 5px 5px 0 0;
+  background-color: var(--dark);
+}
+
+.todo-input {
+  width: 80%;
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  color: black;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.todo-input:focus {
+  background-color: white;
+}
+
+.alert-info {
+  font-size: 24px;
+  margin-top: 20px;
+  color: var(--dark);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.add-btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark-blue);
+  background-color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.add-btn:hover {
+  color: white;
+  background-color: var(--orange);
+}
+
+.todo-list {
+  padding: 20px 0;
+}
+
+.todo-list h3 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  margin: 15px;
+  padding-left: 20px;
+  list-style: none;
+  background-color: rgb(244, 241, 222, 0.6);
+  border-radius: 5px;
+}
+
+.tools {
+  display: inline-block;
+  font-size: 0;
+}
+
+.tools button {
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Encode Sans Condensed", sans-serif;
+}
+
+.tools button:hover {
+  background-color: #ddd;
+}
+
+.complete {
+  color: var(--dark);
+}
+
+.edit {
+  font-weight: bold;
+  color: rgb(72, 146, 112);
+}
+
+.delete {
+  color: rgb(209, 78, 54);
+}
+
+.completed {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--dark);
+  text-decoration: line-through;
+}
+
+.popup {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  color: var(--dark);
+  background-color: var(--green);
+  border-radius: 5px;
+}
+
+.popup h3 {
+  font-size: 24px;
+  padding: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.popup-info {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.popup-body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 90%;
+  padding: 10px;
+}
+
+.popup-input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.popup-btn {
+  display: inline-block;
+  width: 30%;
+  padding: 10px 22px;
+  margin: 20px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 5px;
+  color: var(--light);
+  background-color: var(--dark);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-weight: bold;
+}
+
+.popup-btn:hover {
+  background-color: black;
+  color: white;
+}
